@@ -664,6 +664,7 @@ a {
 .footer-subscribe-btn {
   display: flex;
   color: #FFFFFF;
+
   padding: 10px 29px;
   margin-left: 12px;
   margin-right: 0;  
@@ -679,6 +680,7 @@ a {
   background-color:var(--pretty-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: var(--pretty-color);
 }
 
 .icon-btn {
@@ -693,6 +695,14 @@ a {
   padding: 0;
   margin: 0;
   align-items: center;
+}
+
+.join-footer-form input {
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
   
 }
 
@@ -951,7 +961,7 @@ input {
 }
 
 label {
-  /* display: flex;  */
+  display: flex; 
   flex-direction: column;
   margin-bottom: 8px;
   width: 448px;
