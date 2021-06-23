@@ -167,7 +167,7 @@
             </li>
 
             <li class="card">
-                <a href="card team"><img class="team"src="./images/img2.jpg" alt="Ольга Репина" width="270">
+                <a href="card team"><img class="team" src="./images/img2.jpg" alt="Ольга Репина" width="270">
                 <h3 class="card-team">Ольга Репина</h3>
                 <p class="card-li">Frontend Developer</p></a>
 
@@ -185,11 +185,13 @@
                     <use href="./images/icons/sprite.svg#icon-facebookoring"></use>
                   </svg></a></li>
 
-                  <li class="icon-social"><a href="linkedin-icon"><svg class="icon">
+                  <li class="icon-social">
+                    <a href="linkedin-icon"><svg class="icon">
                     <use href="./images/icons/sprite.svg#icon-linkedinoring"></use>
-                  </svg></a></li>
+                  </svg>
+                </a></li>
               </ul>
-            </a>
+          
           </li>
 
             <li class="card">
@@ -345,7 +347,7 @@
         
           <form class="join-footer-form">
             <label>
-              <input type="email" name="email" placeholder="Email">
+              <input type="email" name="email" placeholder="Email" class="footer-input-form">
             </label>
             <button type="submit" class="footer-subscribe-btn">
               Подписаться 
@@ -373,7 +375,57 @@
         <form class="form">
               <b class="tallking">Оставьте свои данные, мы вам перезвоним</b>
 
-              <div class="form-fild">
+            <div class="form-fild">
+              <label class="form-fild-lable">Имя
+                <input type="text" name="user-name" class="modal-form-input"> 
+                <span class="form-icon">
+                  <svg class="client-svg modal-svg">
+                    <use href="./images/icons/sprite.svg#icon-iconmen"></use>
+                  </svg> 
+                 </span>
+              </label>
+              
+            </div>
+
+            <div class="form-fild">
+            <label class="form-fild-lable">Телефон
+              <input type="tel" name="user-phone" class="modal-form-input">
+              <span class="form-icon">
+                <svg class="client-svg modal-svg">
+                  <use href="./images/icons/sprite.svg#icon-iconmen"></use>
+                </svg> 
+               </span>
+            </label>
+           
+            </div>
+
+            <div class="form-fild">
+              <label class="form-fild-lable">Почта
+                <input type="email" name="user-email" class="modal-form-input">
+                <span class="form-icon">
+                  <svg class="client-svg modal-svg">
+                    <use href="./images/icons/sprite.svg#icon-iconmen"></use>
+                  </svg> 
+                 </span>
+              </label>
+              
+            </div>
+
+            <div class="form-fild">
+              <label >Коментарий
+                <textarea class="form-label-texteria" name="user-coment" placeholder="Ведите текст"></textarea>
+              </label>
+            </div>
+
+            <input type="checkbox" name="user-agree" id="checkbox" class="modal-form-check">
+            <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
+
+              <!-- <button type="submit">Отправить</button> -->
+
+
+
+
+              <!-- <div class="form-fild">
                 <input  type="text" 
                   class="form-input" name="Имя" id="name"
                   placeholder=" " autofocus/>  
@@ -385,8 +437,8 @@
                 </svg> 
                </span>
               </div>
-              
-
+               -->
+<!-- 
                <div class="form-fild">
                 <input type="tel" class="form-input" name="tel" id="tel" placeholder=" ">
                 <label class="form-lable"  for="tel">Телефон</label>
@@ -397,9 +449,9 @@
                     <use href="./images/icons/sprite.svg#icon-icontel"></use>
                   </svg> 
                 </span>
-              </div> 
+              </div>  -->
 
-              <div class="form-fild">
+              <!-- <div class="form-fild">
                 <input type="email" class="form-input" name="mail" id="mail"  placeholder=" ">
                 <label class="form-lable"  for="mail">Почта</label>
 
@@ -408,9 +460,9 @@
                     <use href="./images/icons/sprite.svg#icon-iconenvelope"></use>
                   </svg> 
                 </span>
-              </div>
+              </div> -->
                         
-              <label  class="form-label-texteria" for="comment">Коментарий 
+              <!-- <label  class="form-label-texteria" for="comment">Коментарий 
                     <textarea name="comment" class="texteria-class"  placeholder="Ведите текст" id="commemt"></textarea>  
               </label>
          
@@ -418,22 +470,21 @@
                <input class="checkbox" type="checkbox" name="topic" value="css" id="css">
                   <span class="checkbox-icon"></span>
                  <span class="checkbox-footer">Соглашаюсь с рассылкой и принимаю <span class="checkbox-icon-footer">Условия договора</span></span></label>
-                </label>
-              <button class="sign-link btn-check">
-                <type="submit">Отправить</type>
+              <button class="sign-link btn-check" type="submit">Отправить</type> -->
+                
               </button> 
             </form>
       </div>
     </div>
 
 
-<script>
+<!-- <script>
   const { height : pageHeaderHeight } =document
   .querySelector(".page-header")
   .getBoundingClientRect();
 
   document.body.style.paddingTop = ${ pageHeaderHeight};
-</script>
+</script> -->
 
     <script src="./js/modal.js"></script>
      
