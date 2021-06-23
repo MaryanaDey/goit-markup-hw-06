@@ -711,19 +711,15 @@ a {
 
 .icon {
   fill: #afb1b8;
-  
-  width: 20px;
+   width: 20px;
   margin-right: 10px;
   margin: 0 30px;
-  
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social:hover .icon{
   fill: var(--while-color);
 }
-
-
 
 .card .icon-team  {
   display: flex;
@@ -844,7 +840,7 @@ a {
   top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%); 
-  color: 000000;
+  color: #000000;
 }
 
 .button-modal {
@@ -1059,7 +1055,8 @@ textarea:focus {
 }
 
 .form-fild:focus-within> .form-icon {
-  fill: #2196f3;
+  /* fill: #2196f3; */
+  fill: var(--pretty-color);
 }
 
 .checkbox-footer {
