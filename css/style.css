@@ -825,8 +825,8 @@ a {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   padding: 15px;
   
   background-color: #ffffff;
@@ -988,11 +988,14 @@ textarea:focus {
   color: #212121;
   padding-bottom: 30px;
   
-  font-weight: bold;
+   font-weight: bold; 
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+
+  font-family: Roboto;
+  font-style: normal;
 }
 
 .checkbox {
@@ -1030,7 +1033,7 @@ textarea:focus {
 .label-checkbox{
    display:inline-block; 
    /* outline: 1px solid yellow; */
-   margin-bottom: 40px;
+   /* margin-bottom: 40px; */
 }
 
 
@@ -1073,7 +1076,7 @@ textarea:focus {
 }
 
 .btn-check {
- margin-left: 165px;
+  margin-left: 145px; 
 }
 
 /* BACKDROP */
