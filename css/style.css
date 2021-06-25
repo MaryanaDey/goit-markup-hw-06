@@ -666,25 +666,9 @@ a {
 .footer-subscribe-btn {
   display: flex;
   width: 200px;
-  color: #FFFFFF;
-
   padding: 10px 29px;
   margin-left: 12px;
   margin-right: 0;  
-  
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  
-  background-color:var(--pretty-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: var(--pretty-color);
-  border:none;
 }
 
 .icon-btn {
@@ -694,7 +678,7 @@ a {
 }
 
 .join-footer-form {
-  /* display: flex;  */
+ 
   display: block;
   width: 100%;
   padding: 0;
@@ -703,8 +687,6 @@ a {
 }
 
 .footer-input-form {
-  display: inline-block;
-
   width: 358px;
   background-color: var(--black-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
