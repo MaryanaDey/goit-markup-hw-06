@@ -626,7 +626,6 @@ a {
 }
 
 .join {
-  /* display: inline-block; */
   margin-bottom: 20px;
   color: var(--while-color);
   font-weight: bold;
@@ -642,7 +641,6 @@ a {
 }
 
 .footer-subscribe {
-  display: inline-block;
   color: var(--while-color);
   
   font-weight: bold;
@@ -650,25 +648,17 @@ a {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
-.footer-subscribe-email {
-  /* display: flex; */
-  
-  width: 570px;
-  margin: 0;
-  padding: 0;
-  margin-left: 93px;
-  
-}
 
 .footer-subscribe-btn {
   display: flex;
   width: 200px;
   padding: 10px 29px;
-  margin-left: 12px;
   margin-right: 0;  
+  font-style: normal;
+  align-items: center;
+  text-align: center;
 }
 
 .icon-btn {
@@ -698,8 +688,8 @@ a {
   padding-bottom: 15px;
   padding-left: 16px;
 }
-.join-footer-form-lable {
-    margin: 0;
+.footer-form form {
+  display: flex;
 }
 /* FOOTER */
 
@@ -778,7 +768,19 @@ a {
   align-items: baseline;
 }
 
-
+.footer-form{
+  margin-left: 93px;
+}
+.footer-input{
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  background-color: var(--dark-background-color);
+  padding: 15px 16px;
+  margin-top: 20px;
+}
 
 /* BACKDROP */
 
@@ -892,15 +894,8 @@ form {
 .form-fild {
   display: block;
   position: relative;
-
   flex-direction: column;
-  /* margin-bottom: 20px; */
-  
 }
-/* 
-.form-fild:last-child {
-  margin-bottom: 0;
-} */
 
 .form-lable {
   position: absolute;
@@ -964,27 +959,8 @@ form {
 .form-input:focus + .form-lable ,
 .form-input:not(:placeholder-shown) + .form-lable{
   color: var(--pretty-color);
-  fill: var(--pretty-color);
-  /* transform: translateY(-50px);  */
+  fill: var(--pretty-color); 
 }
-/* 
-input[type='checkbox']{
-  width: 15px;
-  height: 15px;
-} */
-
-/* input {
-  padding: 8px;
-  font-family: inherit;
-  font-size: inherit;
-  box-sizing: border-box;
-  border-radius: 4px;  
-} */
-
-/* label {
-  display: flex; 
-  flex-direction: column;
-} */
 
 
 textarea:hover,
@@ -998,16 +974,8 @@ textarea:focus {
   height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  outline: none;
-  
+  outline: none; 
 } 
-/* 
-.form-label-texteria textarea::placeholder{
-
-  padding: 12px 16px;
-  
-} */
-
 
 .tallking {
   color: var(--black-color);
