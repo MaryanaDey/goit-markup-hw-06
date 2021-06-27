@@ -12,7 +12,6 @@
   --grey-color: #757575;
   --black-color: #212121;
   --dark-color: #2f303a;
-  --footer-color: #2F303A;
 
   --icon-bg: #2196f3;
   --sing-color: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -75,7 +74,7 @@ a {
 /* NAV */
 .page-header{
   display: flex;
-  /* position: fixed; */
+  position: fixed;
   width: 100%; 
   top: 0;
   left: 0;
@@ -92,6 +91,7 @@ a {
 
   background-color: #fff;
   align-items: center;
+ 
 }
 
 .nav-list {
@@ -245,8 +245,7 @@ a {
   margin: auto;
   width: 1600px; 
   padding: 200px 0;
-  background: linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)),
-               url(../images/clients/Img.jpg); 
+  background-image: url(../images/clients/Img.jpg);
   background-color:  #C4C4C4;
   background-size: cover;
   background-repeat: no-repeat;
@@ -303,7 +302,9 @@ a {
 
 /* SING-LINK*/
 
-.sign-link {  
+.sign-link {
+  padding: 10px 32px;
+  
   color: var(--while-color);
   background: var(--blue-color);
   font-family: inherit;
@@ -327,29 +328,6 @@ a {
   color: var(--while-color);
   background-color: var(--light-blue);
   border: none;
-}
-
-.sign-section-one{
-  padding: 10px 32px;
-} 
-
-.btn-check {
-  align-self: center;
-  margin-top: 30px;
-  width: 200px;
-  height: 50px;
-  padding: 10px 55px;
-}
-
-.footer-subscribe-btn {
-  display: flex;
-  width: 200px;
-  padding: 10px 29px;
-  margin-right: 0;  
-  font-style: normal;
-  align-items: center;
-  text-align: center;
-  height: 50px;
 }
 
 
@@ -421,13 +399,13 @@ a {
   background: var(--while-color);
   border-radius: 0px 0px 4px 4px;
   transform: scale(1) ;
-  box-shadow: var(--feature-card-shadow);
 }
 
 .feature-list .card:hover {
+  box-shadow: var(--feature-card-shadow);
   transform: scale(1.1);
+  
 } 
-
 .feature-list .card:nth-child(4n) {
   margin-right: 0;
 }
@@ -480,8 +458,7 @@ a {
   
   border: 1px solid var(--portfolio-color);
   background: var(--while-color);
-  transition: color,
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* PORTFOLIO-LIST*/
@@ -616,22 +593,14 @@ a {
 
 /* FOOTER */
 
+.address {
+  font-style: normal;
+}
+
 .footer {
-  background: var(--footer-color); 
+  background: var(--black-color);
   padding: 60px 0;
 }
-
-.address {
-  color: #FFFFFF;
-  font-style: normal;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71; 
-  letter-spacing: 0.03em;
-}
-
 
 .footer-studio {
   color: var(--while-color);
@@ -671,7 +640,7 @@ a {
   margin-left: 70px;
 }
 
-.footer-subscribe-b {
+.footer-subscribe {
   color: var(--while-color);
   
   font-weight: bold;
@@ -681,11 +650,16 @@ a {
   text-transform: uppercase;
 }
 
-.footer-subscribe {
-  display: flex;
-  align-items: baseline;
-}
 
+.footer-subscribe-btn {
+  display: flex;
+  width: 200px;
+  padding: 10px 29px;
+  margin-right: 0;  
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+}
 
 .icon-btn {
   width: 24px;
@@ -729,7 +703,6 @@ a {
 
 .icon-social:hover .icon{
   fill: var(--while-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card .icon-team  {
@@ -877,9 +850,9 @@ a {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
-.button-modal:hover {
+
+.close-svg:hover {
   fill: var(--pretty-color);
 }
 
@@ -908,12 +881,12 @@ a {
   margin-top: 4px;
 }
 
- 
-.modal-form {
+
+form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: auto;
+   margin-left: auto;
   margin-right: auto;
   
 }
@@ -946,8 +919,6 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
   resize: none;
-  border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label-texterea::placeholder {
@@ -1014,7 +985,8 @@ textarea:focus {
   font-weight: bold;
   font-size: 20px; 
   line-height: 1.15;
-  letter-spacing: 0.03em;
+  text-align: center;
+  /* letter-spacing: 0.03em;*/
    
 }
 
@@ -1038,7 +1010,7 @@ textarea:focus {
   height: 15px;
   background-color: rgb(248, 243, 242);
   border: 2px solid #2a2a2a;
-  border-radius: 2px;
+  border-radius: 4px;
   margin-left: 13px; 
 }
 
@@ -1091,7 +1063,12 @@ textarea:focus {
   border-bottom: 1px solid var(--pretty-color);
 }
 
-
+.btn-check {
+  align-self: center;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+}
 
 /* BACKDROP */
 
@@ -1143,7 +1120,7 @@ textarea:focus {
     left: 50%;
     transform: translate(-50%, -50%); 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
    }
   
     .item:hover .product-overlay{

@@ -19,7 +19,7 @@
         <a class="logo" href="#"><span class="web">Web</span><span class="studio">Studio</span></a>
         <nav>
           <ul class="nav-list">
-             <li class="item"><a class="link current" href="index.html">Студия</a></li>
+             <li class="item"><a class="link current" href="./index.html">Студия</a></li>
              <li class="item"><a class="link" href="portfolio.html">Портфолио</a></li>
              <li class="item"><a class="link" href="contacts.html">Контакты</a></li>
           </ul>
@@ -43,8 +43,8 @@
 <main>
   <section class="section-one">
         <div class="contanier">
-        <h1 class="bisnes">Эффективные решения для <br>вашего бизнеса</h1>
-        <button class="sign-link" type="button"  data-open-modal>Заказать услугу</button>
+        <h1 class="bisnes">Эффективные решения  <br> для вашего бизнеса</h1>
+        <button class="sign-link sign-section-one" type="button"  data-open-modal>Заказать услугу</button>
         </div>
     </section>
 
@@ -306,7 +306,7 @@
 
         <div class="footer-logo">      
           <a class="logo" href="#"><span class="web">Web</span><span class="footer-studio">Studio</span></a> 
-          <address>
+          <address class="adress">
             <p class="footer-adress"> г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="address-list">
               <li class="contact-footer"><a class="phone-link" href="mailto:info@example.com">info@example.com</a></li>
@@ -340,8 +340,8 @@
         </div><!--join-footer-->
 
         <div class="footer-form">
-          <b class="footer-subscribe">Подпишитесь на рассылку</b>
-           <form>
+          <b class="footer-subscribe-b">Подпишитесь на рассылку</b>
+           <form class="footer-subscribe">
              <input type="email" name="user-email" placeholder="E-mail" class="footer-input">
              <button type="submit" class="sign-link footer-subscribe-btn">Подписаться
               <svg class="icon-btn">
@@ -350,6 +350,7 @@
              </button>
            </form>
         </div>
+        
       </div><!--la-->
       </div> <!--contanier-->
     </footer>
@@ -365,13 +366,13 @@
           </span>
         </button>
         
-        <form class="form">
+        <form class="modal-form ">
               <b class="tallking">Оставьте свои данные, мы вам перезвоним</b>
 
             <div class="form-fild">
               <label class="form-fild-lable">Имя
                 <span class="form-fild-wrap">
-                  <input type="text" minlength="2" name="user-name" placeholder=" " autofocus class="modal-form-input"> 
+                  <input type="text" minlength="2" name="user-name" placeholder=" " class="modal-form-input"> 
                   <span class="form-icon">
                     <svg class="client-svg modal-svg">
                       <use href="./images/icons/sprite.svg#icon-iconmen"></use>
@@ -388,7 +389,7 @@
               <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="user-phone"  placeholder=" " class="modal-form-input">
               <span class="form-icon">
                 <svg class="client-svg modal-svg">
-                  <use href="./images/icons/sprite.svg#icon-iconmen"></use>
+                  <use href="./images/icons/sprite.svg#icon-icontel"></use>
                 </svg> 
                </span>
               </span>
@@ -401,7 +402,7 @@
                 <input type="email" name="user-email" placeholder=" " class="modal-form-input">
                 <span class="form-icon">
                   <svg class="client-svg modal-svg">
-                    <use href="./images/icons/sprite.svg#icon-iconmen"></use>
+                    <use href="./images/icons/sprite.svg#icon-iconenvelope"></use>
                   </svg> 
                  </span>
                 </span>
@@ -419,7 +420,7 @@
                  <span class="checkbox-icon"></span>
                 <span class="checkbox-footer">Соглашаюсь с рассылкой и принимаю <a href="#"><span class="checkbox-icon-footer">Условия договора</span></a></span></label> 
 
-             <button type="submit" class="sign-link btn-check ">Отправить</button>
+             <button type="submit" class="sign-link btn-check">Отправить</button>
             <!-- <button  class="sign-link btn-check" type="submit">Отправить</button>  -->
             </form>
       </div>
